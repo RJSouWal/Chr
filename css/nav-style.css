@@ -34,6 +34,7 @@ nav{
    left: 0;
    background: var(--tint);
    color: rgb(18, 156, 161);
+   display: none;
 }
 
 nav ul{
@@ -55,11 +56,36 @@ nav ul li a{
 }
 
 .nav-toggle{
-
+ display: none;
 }
 
 .nav-toggle-label{
    position: absolute;
-   top: 100px;
-   left: 10px;
+   top: 0;
+   left: 0;
+   margin-left: 1em;
+   z-index: 11;
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+/* Setting up the hamburger */
+
+/* .nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+   display: block;
+   content: 'Lorem';
+   position: absolute;
+   height: 5px;
+   width: 100%;
+   border-radius: 2px;
+   background-color: rgb(255, 255, 255);
+} */
+
+
+/* The animation magic */
+.nav-toggle:checked ~ nav{
+   display: block;
 }
