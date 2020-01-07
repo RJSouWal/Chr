@@ -72,19 +72,33 @@ nav ul li a{
 
 /* Setting up the hamburger */
 
-/* .nav-toggle-label span,
+.nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after{
+   margin: 0;
+   padding: 0;
    display: block;
-   content: 'Lorem';
-   position: absolute;
-   height: 5px;
-   width: 100%;
+   position: relative;
+   height: 4px;
    border-radius: 2px;
-   background-color: rgb(255, 255, 255);
-} */
+   width: 3em;
+}
 
-
+.nav-toggle-label span{
+   background-color: rgb(105, 36, 36);
+}
+.nav-toggle-label span::before{
+   content: '';
+   bottom: 0.7rem;
+   height: 10px;
+   background-color: rgb(147, 86, 86);
+}
+.nav-toggle-label span::after{
+   content: '';
+   height: 10px;
+   top: -0.25rem;
+   background-color: rgb(147, 86, 86);
+}
 /* The animation magic */
 .nav-toggle:checked ~ nav{
    display: block;
