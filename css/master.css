@@ -1,0 +1,107 @@
+:root{
+   --bg: #222;
+   --tint: rgba(147, 233, 255, 0.85);
+   --bigBlue: rgba(1, 64, 136, 0.9);
+}
+
+*,*::before,*::after{
+   box-sizing: border-box;
+   margin: 0;
+}
+
+body{
+   background-color: #fafafa;
+}
+
+.container{
+   height: 18rem;
+}
+
+header{
+   height: 100%;
+   width: 100%;
+   position: relative;
+}
+
+/*
+   _______         ___       ____        __   __   __
+      |    |___|  |__        |___  |__| |__| |__| |__
+      |    |   |  |___       ____| |  | |  | |    |__
+ */
+.title{
+   position: absolute;
+   z-index: 2;
+   text-transform: uppercase;
+   font-size: 2em;
+   font-family: 'Viga',sans-serif;
+   color:
+}
+.header-shape{
+   position: absolute;
+   height: 13rem;
+   width: 100%;
+   background-color: var(--tint);
+   box-shadow: 5px 6px 6px black;
+   clip-path: polygon(0 0, 100% 0%, 100% 10rem, 85% 10rem, 70% 12rem,
+       55% 10.5rem, 45% 10.5rem, 30% 12rem, 20% 10.5rem, 0% 10rem);
+}
+.header-shadow-shape{
+   position: absolute;
+   z-index: -1;
+   height: 13rem;
+   width: 100%;
+   background-color: black;
+   filter: blur(12px);
+   box-shadow: 5px 6px 6px black;
+   clip-path: polygon(0 0, 100% 0%, 100% 10.2rem, 85% 10.2rem, 70% 12.2rem,
+       55% 10.7rem, 45% 10.7rem, 30% 12.2rem, 20% 10.7rem, 0% 10.2rem);
+}
+
+
+
+/*  Logo Image */
+.logo{
+   position: absolute;
+   top: 2.8rem;
+   left: 38%;
+}
+
+/*  Nav Bar Settings */
+
+nav{
+   position: absolute;
+   bottom: 1rem ;
+   width: 100%;
+   height: 4rem;
+}
+
+nav ul{
+   height: 100%;
+   list-style: none;
+
+}
+nav ul li{
+   height: 100%;
+   display: inline-block;
+   margin: 2rem;
+}
+
+nav ul li a{
+   text-decoration: none;
+   font-size: 2em;
+   color: var(--bigBlue);
+}
+
+.litem1{
+   position: absolute; left: 130px;
+}
+.litem2{
+   position: absolute; left: 340px;
+}
+.litem3{
+   position: absolute; right: 340px;
+}
+.litem4{
+   position: absolute; right: 130px;
+}
+/* Nav Bar Ends */

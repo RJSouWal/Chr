@@ -16,6 +16,16 @@ body{
 }
 /* Navbar Settings */
 
+.header-shape{
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 10rem;
+   clip-path: polygon(0 0, 100% 0%, 100% 10rem, 85% 10rem, 70% 12rem,
+       55% 10.5rem, 45% 10.5rem, 30% 12rem, 20% 10.5rem, 0% 10rem);
+   box-shadow: 6px 5px 6px rgb(28, 31, 32);
+}
+
 header{
    background: var(--tint);
    text-align: center;
@@ -26,9 +36,7 @@ header{
    left: 0;
    right: 0;
    height: 10rem;
-   clip-path: polygon(0 0, 100% 0%, 100% 10rem, 85% 10rem, 70% 12rem,
-       55% 10.5rem, 45% 10.5rem, 30% 12rem, 20% 10.5rem, 0% 10rem);
-   box-shadow: 6px 5px 6px rgb(28, 31, 32);
+
 }
 
 .logo{
