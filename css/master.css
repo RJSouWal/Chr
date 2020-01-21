@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-   height: 18rem;
+   height: 20rem;
 }
 
 header{
@@ -29,12 +29,13 @@ header{
       |    |   |  |___       ____| |  | |  | |    |__
  */
 .title{
+   margin-left: 6.5rem;
+   margin-top: 2rem;
    position: absolute;
    z-index: 2;
-   text-transform: uppercase;
-   font-size: 2em;
-   font-family: 'Viga',sans-serif;
-   color:
+   font-size: 5em;
+   font-family: 'Matura MT Script Capitals';
+   color: var(--bigBlue);
 }
 .header-shape{
    position: absolute;
@@ -57,6 +58,18 @@ header{
        55% 10.7rem, 45% 10.7rem, 30% 12.2rem, 20% 10.7rem, 0% 10.2rem);
 }
 
+.header-ender{
+   position: absolute;
+   top: 7rem;
+   z-index: -2;
+   height: 20rem;
+   width: 100%;
+   background-color: rgba(192, 240, 252, 0.85);
+   filter: blur(12px);
+   box-shadow: 5px 6px 6px black;
+   clip-path: polygon(0 0, 100% 0%, 100% 10.2rem, 85% 10.2rem, 70% 12.2rem,
+       55% 10.7rem, 45% 10.7rem, 30% 12.2rem, 20% 10.7rem, 0% 10.2rem);
+}
 
 
 /*  Logo Image */
@@ -70,7 +83,7 @@ header{
 
 nav{
    position: absolute;
-   bottom: 1rem ;
+   bottom: 4rem ;
    width: 100%;
    height: 4rem;
 }
@@ -90,11 +103,25 @@ nav ul li a{
    text-decoration: none;
    font-size: 2em;
    color: var(--bigBlue);
+   transition: font-size 200ms ease-in-out 50ms;
+}
+nav ul li a:hover{
+   font-size: 2.4em
 }
 
 .litem1{
    position: absolute; left: 130px;
 }
+
+.litem1::after{
+   content: '';
+   display: block;
+   background-color: var(--bigBlue);
+   width: 100%;
+   height: 5px;
+   border-radius: 2.5px;
+}
+
 .litem2{
    position: absolute; left: 340px;
 }
@@ -105,3 +132,9 @@ nav ul li a{
    position: absolute; right: 130px;
 }
 /* Nav Bar Ends */
+
+/* Content begins here */
+
+.content{
+
+}
