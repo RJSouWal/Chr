@@ -88,6 +88,7 @@ nav{
    bottom: 4rem ;
    width: 100%;
    height: 4rem;
+   z-index: 5;
 }
 
 nav ul{
@@ -208,6 +209,8 @@ nav ul li a:hover{
    display: grid;
    grid-template-rows: auto;
    grid-template-columns: 2fr auto 1fr auto 1fr auto 1fr auto 2fr;
+   background-image: url(/img/bg.png);
+   background-size: 100% auto;
 
 }
 .references img{
@@ -215,7 +218,6 @@ nav ul li a:hover{
    background-color: none;
    border-radius: 150px;
    transition: background-color 350ms ease-in-out 100ms, transform 350ms ease-in-out 100ms;
-
 }
 .references img:hover{
    transform: scale(1.5,1.5);
@@ -233,4 +235,12 @@ nav ul li a:hover{
 }
 .gritem4{
    grid-column: 8 / 8;
+}
+.bgx{
+   position: relative;
+   margin-top: 17.5rem;
+   width: 100%;
+   height: 16rem;
+
+   clip-path: polygon(0 100% , 100% 100% , 100% 20%, 80% 30% , 70% 35%, 60% 45%,40% 30%, 30% 25%, 25% 30%, 15% 35%, 5% 30%, 0 0);
 }
